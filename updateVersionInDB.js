@@ -8,7 +8,6 @@ const connect = mongoose.connect(URL, { useNewUrlParser: true, useUnifiedTopolog
 connect.then(async (db) => {
     console.log('Connected correctly to server!');
     await AppDetails.findOneAndUpdate({}, {
-        _id: mongoose.Types.ObjectId(),
         latestAndroidVersion: VERSION
     }, { upsert: true })
     console.log(`Android version ${VERSION} updated in DB successfully!`);

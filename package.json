@@ -1,0 +1,26 @@
+{
+  "name": "delinion-apps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "updateVersionInDB": "node updateVersionInDB.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/delinion/delinion-apps.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/delinion/delinion-apps/issues"
+  },
+  "homepage": "https://github.com/delinion/delinion-apps#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "mongodb": "^3.6.10",
+    "mongoose": "^5.13.5"
+  },
+  "devDependencies": {}
+}

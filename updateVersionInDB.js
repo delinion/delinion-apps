@@ -11,7 +11,7 @@ connect.then(async (db) => {
         _id: mongoose.Types.ObjectId(),
         latestAndroidVersion: VERSION
     }, { upsert: true })
-    console.log("Android version updated in DB successfully!");
+    console.log(`Android version ${VERSION} updated in DB successfully!`);
     process.exit();
 }, (err) => {
     console.log(err);
